@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let gamer of gamers" [ngClass]="{'Oferta':gamer.Oferta}">
+            <td><img [src]="gamer.Image" [alt]="gamer.Nombre" width="100" height="100"></td>
+            <td>{{gamer.Nombre  | uppercase}}</td>
+            <td>{{gamer.Marca}}</td>
+            <td>{{gamer.Precio  | currency }}</td>
+            <td>{{gamer.Stock}}</td>
+        </tr>
+       
+    </tbody>
+</table>
