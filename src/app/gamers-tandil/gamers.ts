@@ -6,5 +6,6 @@ Marca:  string;
 Precio: number;
 Stock:  number;
 Oferta: boolean;
-
+Cantidad: number;
 }
+

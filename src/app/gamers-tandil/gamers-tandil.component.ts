@@ -17,7 +17,10 @@ gamers: Gamers [] =  [{
 "Precio": 12000,
 "Stock": 5,
 "Image": "assets/images/auricularlogitech.jpg",
-"Oferta": false },
+"Oferta": false,
+"Cantidad": 0, 
+
+},
 
 { 
 "Nombre": "Mouse Inalambrico",
@@ -25,7 +28,10 @@ gamers: Gamers [] =  [{
 "Precio": 6500,
 "Stock": 12,
 "Image": "assets/images/mouserazer.jpg",
-"Oferta": true  },
+"Oferta": true,
+"Cantidad": 0,
+
+},
 
 {
 "Nombre": "Auricular",
@@ -33,7 +39,9 @@ gamers: Gamers [] =  [{
 "Precio": 18000,
 "Stock": 19,
 "Image": "assets/images/auricularss.jpg",
-"Oferta": false  },
+"Oferta": false,
+"Cantidad": 0,
+  },
 
 {
 "Nombre": "Auricular",
@@ -41,7 +49,9 @@ gamers: Gamers [] =  [{
 "Precio": 28000,
 "Stock": 9,
 "Image": "assets/images/auricularrazer.jpg",
-"Oferta": false },
+"Oferta": false,
+"Cantidad": 0,
+  },
 {
 
 "Nombre": "Auricular",
@@ -49,7 +59,9 @@ gamers: Gamers [] =  [{
 "Precio": 30000,
 "Stock": 3,
 "Image": "assets/images/auricularlogitech.jpg",
-"Oferta": false },
+"Oferta": false,
+"Cantidad": 0,
+  },
 
  {
 "Nombre": "Teclado",
@@ -57,7 +69,8 @@ gamers: Gamers [] =  [{
 "Precio": 38000,
 "Stock": 11,
 "Image": "assets/images/tecladorazer.jpg",
-"Oferta": true 
+"Oferta": true,
+"Cantidad": 0,  
 
 },
 
@@ -67,7 +80,8 @@ gamers: Gamers [] =  [{
 "Precio": 10000,
 "Stock": 42,
 "Image": "assets/images/mousess.jpg",
-"Oferta": false 
+"Oferta": false,
+"Cantidad": 0, 
 
 },
 
@@ -77,7 +91,9 @@ gamers: Gamers [] =  [{
 "Precio": 3000,
 "Stock": 1,
 "Image": "assets/images/mousegenius.jpg",
-"Oferta": false 
+"Oferta": false,
+"Cantidad": 0,
+
 
 }
 
@@ -90,4 +106,20 @@ gamers: Gamers [] =  [{
   ngOnInit(): void {
   }
 
+//FUNCION DE TS, QUE AUMENTA LA CANTIDAD
+MasCantidad(gamers: Gamers): void {
+if(gamers.Cantidad < gamers.Stock)
+gamers.Cantidad++;
+
 }
+
+MenosCantidad(gamers: Gamers): void {
+if (gamers.Cantidad >0)
+  gamers.Cantidad--;
+  
+  }
+  
+}
+
+
+

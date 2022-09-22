@@ -6,6 +6,7 @@
             <th>Marca</th>
             <th>Precio</th>
             <th>Stock</th>
+            <th>Compra</th>
         </tr>
     </thead>
     <tbody>
@@ -15,6 +16,7 @@
             <td>{{gamer.Marca}}</td>
             <td>{{gamer.Precio  | currency }}</td>
             <td>{{gamer.Stock}}</td>
+            <td><button class="btn btn-success" (click)="MenosCantidad(gamer)">-</button><input size=40 style="width:30px" type="text" [(ngModel)]="gamer.Cantidad"><button class="btn btn-success"(click)="MasCantidad(gamer)">+</button></td>
         </tr>
        
     </tbody>
