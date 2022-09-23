@@ -5,10 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GamersTandilComponent } from './gamers-tandil/gamers-tandil.component';
 import { FormsModule } from '@angular/forms';
+import { GamersAboutComponent } from './gamers-about/gamers-about.component';
+import { GamersProductosComponent } from './gamers-productos/gamers-productos.component';
+import { CarritogamersComponent } from './carritogamers/carritogamers.component';
 @NgModule({
   declarations: [
     AppComponent,
-    GamersTandilComponent
+    GamersTandilComponent,
+    GamersAboutComponent,
+    GamersProductosComponent,
+    CarritogamersComponent
   ],
   imports: [
     BrowserModule,

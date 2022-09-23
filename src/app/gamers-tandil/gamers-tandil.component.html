@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table text center" te>
     <thead>
         <tr>
             <th>Imagen</th>
@@ -16,7 +16,7 @@
             <td>{{gamer.Marca}}</td>
             <td>{{gamer.Precio  | currency }}</td>
             <td>{{gamer.Stock}}</td>
-            <td><button class="btn btn-success" (click)="MenosCantidad(gamer)">-</button><input size=40 style="width:30px" type="text" [(ngModel)]="gamer.Cantidad"><button class="btn btn-success"(click)="MasCantidad(gamer)">+</button></td>
+            <td><button class="btn btn-success" (click)="MenosCantidad(gamer)">-</button><input size=40 style="width:30px" type=»number» [(ngModel)]="gamer.Cantidad"><button class="btn btn-success"(click)="MasCantidad(gamer)">+</button></td>
         </tr>
        
     </tbody>
