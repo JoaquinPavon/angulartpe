@@ -8,13 +8,15 @@ import { FormsModule } from '@angular/forms';
 import { GamersAboutComponent } from './gamers-about/gamers-about.component';
 import { GamersProductosComponent } from './gamers-productos/gamers-productos.component';
 import { CarritogamersComponent } from './carritogamers/carritogamers.component';
+import { InputNumberComponent } from './input-number/input-number.component';
 @NgModule({
   declarations: [
     AppComponent,
     GamersTandilComponent,
     GamersAboutComponent,
     GamersProductosComponent,
-    CarritogamersComponent
+    CarritogamersComponent,
+    InputNumberComponent
   ],
   imports: [
     BrowserModule,
